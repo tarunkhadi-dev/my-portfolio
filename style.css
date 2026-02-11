@@ -10,6 +10,31 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* --- NEW PROJECT BUTTON STYLES --- */
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.small-btn {
+    font-size: 0.85rem;
+    padding: 8px 15px;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: var(--transition);
+    background: rgba(56, 189, 248, 0.1); /* Slight blue tint */
+}
+
+.small-btn:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -456,4 +481,5 @@ footer {
     .nav-links { display: none; }
     .section-padding { padding: 60px 0; }
     .logo-wrapper { margin: 0 auto; }
+
 }
